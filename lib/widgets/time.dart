@@ -7,7 +7,7 @@ class Time extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Time:${second}',
+      'Time : ${second} sec',
       style: TextStyle(
           fontSize: 25.0,
           color: Colors.pinkAccent,
