@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slide_puzzle/src/board.dart';
+import 'dart:math';
 
 class GameMenu extends StatelessWidget {
+  Random random1 = new Random(),
+          random2 = new Random(),
+            random3 = new Random(),
+              random4 = new Random(),
+                random5 = new Random(),
+                  random6 = new Random(),
+                    random7 = new Random(),
+                      random8 = new Random();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 212, 184, 184),
+      backgroundColor: Color.fromARGB(random1.nextInt(256), random2.nextInt(256), random3.nextInt(256), random4.nextInt(256)),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(0),
@@ -28,9 +37,8 @@ class GameMenu extends StatelessWidget {
                   height: 130,
                   width: 130,
                   decoration: BoxDecoration(
-                      color: Colors.pinkAccent,
+                      color: Color.fromARGB(random5.nextInt(256), random6.nextInt(256), random7.nextInt(256), random8.nextInt(256)),
                       borderRadius: BorderRadius.circular(70),
-
                       boxShadow: [
                         shadow(),
                       ]),
@@ -122,7 +130,7 @@ class GameMenu extends StatelessWidget {
   BoxShadow shadow() {
     return BoxShadow(
       color: Colors.black45,
-      blurRadius: 10,
+      blurRadius: 5,
       spreadRadius: 1,
       offset: Offset(0, 10.0),
     );

@@ -8,6 +8,7 @@ import 'package:flutter_slide_puzzle/widgets/footer.dart';
 import 'package:flutter_slide_puzzle/widgets/grid.dart';
 import 'package:flutter_slide_puzzle/widgets/menu.dart';
 import 'package:flutter_slide_puzzle/widgets/tile.dart';
+
 class Board extends StatefulWidget {
   @override
   _BoardState createState() => _BoardState();
@@ -43,7 +44,10 @@ class _BoardState extends State<Board> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-
+      Random random1 = new Random(),
+          random2 = new Random(),
+            random3 = new Random(),
+              random4 = new Random();
     if (timer == null) {
       timer = Timer.periodic(duration, (timer) {
         startTimer();
@@ -53,7 +57,7 @@ class _BoardState extends State<Board> {
       body: SafeArea(
         child: Container(
           height: size.height,
-          color: Colors.pinkAccent,
+          color: Color.fromARGB(random1.nextInt(256), random2.nextInt(256), random3.nextInt(256), random4.nextInt(256)),
           child: Column(
             children: <Widget>[
               MyTile(
