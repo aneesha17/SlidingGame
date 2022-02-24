@@ -1,7 +1,5 @@
 # flutter_slide_puzzle
 
-![bannerslide](https://user-images.githubusercontent.com/71002261/127608331-89f74a04-2025-4bdb-9e59-081829dd3e9f.png)
-
 
 Slide Puzzle Game Example
 
