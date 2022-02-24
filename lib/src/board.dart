@@ -79,7 +79,7 @@ class _BoardState extends State<Board> {
               FooterButton(
                 reset: OnReset,
                 hint: OnHint,
-                undo:OnUndo,
+                undo: OnUndo,
               )
             ],
           ),
@@ -89,6 +89,7 @@ class _BoardState extends State<Board> {
   }
 
   void clickonGrid(index) {
+
     if (second == 0) {
       isActive = true;
     }

@@ -30,6 +30,7 @@ class Grid extends StatelessWidget {
                 ? GridButton(
                     click: () {
                       onclick(index);
+                      
                     },
                     name: '${number[index]}',
                     color: color,
