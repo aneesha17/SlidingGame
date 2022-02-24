@@ -1,3 +1,8 @@
-2022/02/20-00:11:49.921 3c64 Reusing MANIFEST C:\Users\Aneesha\AppData\Local\Temp\flutter_tools.40773cf9\flutter_tools_chrome_device.62701344\Default\Session Storage/MANIFEST-000001
-2022/02/20-00:11:49.923 3c64 Recovering log #3
-2022/02/20-00:11:49.925 3c64 Reusing old log C:\Users\Aneesha\AppData\Local\Temp\flutter_tools.40773cf9\flutter_tools_chrome_device.62701344\Default\Session Storage/000003.log 
+2022/02/23-20:08:38.051 3b08 Reusing MANIFEST C:\Users\Aneesha\AppData\Local\Temp\flutter_tools.18bc47b9\flutter_tools_chrome_device.7b8207db\Default\Session Storage/MANIFEST-000001
+2022/02/23-20:08:38.053 3b08 Recovering log #3
+2022/02/23-20:08:38.053 3b08 Level-0 table #3: started
+2022/02/23-20:08:38.067 3b08 Level-0 table #3: 16750 bytes OK
+2022/02/23-20:08:38.068 3b08 Recovering log #4
+2022/02/23-20:08:38.069 3b08 Reusing old log C:\Users\Aneesha\AppData\Local\Temp\flutter_tools.18bc47b9\flutter_tools_chrome_device.7b8207db\Default\Session Storage/000004.log 
+2022/02/23-20:08:38.073 3b08 Delete type=0 #3
+2022/02/23-20:08:38.073 3b08 Delete type=2 #5

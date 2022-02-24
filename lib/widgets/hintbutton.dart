@@ -10,14 +10,6 @@ class HintButton extends StatelessWidget {
       onPressed: hint,
       color: Colors.blue[800],
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      child: Text(
-        'New Game',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
     );
   }
 }

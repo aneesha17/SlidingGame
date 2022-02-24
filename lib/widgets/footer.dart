@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slide_puzzle/src/gamemenu.dart';
 import 'package:flutter_slide_puzzle/widgets/resetbutton.dart';
 import 'package:flutter_slide_puzzle/widgets/hintbutton.dart';
+import 'package:flutter_slide_puzzle/widgets/undobutton.dart';
 
 class FooterButton extends StatelessWidget {
-  Function reset,hint;
-  FooterButton({this.reset, this.hint});
+  Function reset,hint,undo;
+  FooterButton({this.reset, this.hint,this.undo});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -55,10 +56,7 @@ class FooterButton extends StatelessWidget {
                 color: Colors.pinkAccent[900],
                 size: 40,
               ),
-              onPressed: () {
-                Navigator.of(context).push(PageRouteBuilder(
-                    pageBuilder: (BuildContext context, _, __) => GameMenu()));
-              },
+              onPressed:undo, 
             ),
           ),
           Container(
