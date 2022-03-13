@@ -18,6 +18,7 @@ class _BoardState extends State<Board> {
   List<int> num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   String s;
   List<List> mat;
+  // Stack<int> stk=Stack();
   var target = "123456789ABCDEF0";
   int move = 0;
   int second = 0;
@@ -204,7 +205,7 @@ class _BoardState extends State<Board> {
   
   void OnHint ()
   {
-    Map<String, int> memo;
+    Map<String, int> memo={};
     int m = 4, n = 4;
     int i1=i-1;
     int j1=j-1;
@@ -213,7 +214,7 @@ class _BoardState extends State<Board> {
     List<List>  dir = [[0, -1], [0, 1], [-1, 0], [1, 0]];
     String curr=s;
 
-    List<Pair<Pair<int, int>, Pair<List<List>,String>>> ver;
+    List<Pair<Pair<int, int>, Pair<List<List>,String>>> ver=[];
     ver.add(Pair(Pair(i1, j1), Pair(mat,curr)));
     memo[curr] = 0;
     int flag=0;
@@ -223,7 +224,7 @@ class _BoardState extends State<Board> {
       i = ver[0].first.first;
       j = ver[0].first.last;
       mat = ver[0].last.first;
-      String ls=ver[i1].last.last;
+      String ls=ver[0].last.last;
       ver.removeAt(0);
       String val = mat2str(mat);
       if (val==hash)   
@@ -268,7 +269,10 @@ class _BoardState extends State<Board> {
         break;
       }
     }
-    print(p);
+    if (ans==s)
+    OnReset();
+    else
+    clickonGrid(p);
   }
 
   void OnUndo() 
